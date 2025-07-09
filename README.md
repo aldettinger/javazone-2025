@@ -10,6 +10,13 @@
  + In shell 1, `mvn clean package -DskipTests`
  + In shell 1, `export QUARKUS_LANGCHAIN4J_OLLAMA_LOG_REQUESTS=true`
  + In shell 1, `java -jar target/quarkus-app/quarkus-run.jar`
+ + In shell 3, prepare command `./send-conversations-to-camel-route.sh`
+ + In eclipse, open
+    + `application.properties`
+    + `CustomPojoExtractionService.java`
+    + `Routes.java`
+ + In eclipse, zoom in, CTRL+SHIFT+PLUS 4 times
+ + In another workspace, open `~/dev/projects/javazone-2025/JavaZone 2025.odp`
 
 ## Plan
 
