@@ -5,8 +5,11 @@
  + Create a terminator with 3 shells splitted horizontally
  + In each shell, scroll up x9
  + In each shell, `cd ~/dev/projects/camel-quarkus-examples-upstream/data-extract-langchain4j/`
+ + In shell 1, `git checkout camel-quarkus-main`
+ + In shell 1, `git reset --hard 61dbc0b58ccce147f672d8d1404ada752ca1bc4`
+ + In shell 1, check clean status, `git status`
  + In shell 2, `docker run --rm -it -v cqex-data-extract-ollama:/root/.ollama -p 11434:11434 --name cqex-data-extract-ollama ollama/ollama:0.9.3`
- + In shell 3, `docker exec -it cqex-data-extract-ollama ollama pull granite3.3:2b`
+ + In shell 3, `docker exec -it cqex-data-extract-ollama ollama pull granite3.3:2b` (no big deal if it fails for the D-Day)
  + In shell 1, `mvn clean package -DskipTests`
  + In shell 1, `export QUARKUS_LANGCHAIN4J_OLLAMA_LOG_REQUESTS=true`
  + In shell 1, `java -jar target/quarkus-app/quarkus-run.jar`
@@ -28,6 +31,4 @@
  + Conclusion (1 min)
 
 ## TODO
- + Change the balance, too much time to explain the code, be more direct
  + Try to repeat without network
- + What are the key elements (unstructured data, structured output...)
