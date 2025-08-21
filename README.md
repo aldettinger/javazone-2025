@@ -1,6 +1,7 @@
 # Javazone 2025
 
 ## How to prepare the demo ?
+ + Prepare the mouse (otherwise the demo setup last more than 10 minutes)
 
  + Create a terminator with 3 shells splitted horizontally
  + In each shell, scroll up x9
@@ -20,6 +21,7 @@
     + `Routes.java`
  + In eclipse, zoom in, CTRL+SHIFT+PLUS 3 times
  + In another workspace (CTRL+ALT+RIGHT), open `~/dev/projects/javazone-2025/JavaZone 2025.odp`
+ + Prepare the presentation stick
 
 ## Plan
 
